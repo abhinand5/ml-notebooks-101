@@ -15,9 +15,9 @@ We love your input! We want to make contributing to this project as easy and tra
 ## What to contribute
 
 * Any really useful implementation of ML algorithms in any framework. 
-* Should add README.txt to execute, required environment and dataset link
-* Compatible old implementations with new fixes
-* Add REQUIREMENTS.txt with the your Jupyter notebook
+* Should add README.md with a bried explanation about usage, required environment and datasets link.
+* Compatible old implementations with new fixes.
+* Add REQUIREMENTS.md with the your Jupyter notebook.
 
 ### Making a PR
 
@@ -27,7 +27,7 @@ We love your input! We want to make contributing to this project as easy and tra
 * Fork the repo and clone it on your machine.
 * Add a upstream link to main branch in your cloned repo
     ```
-    git remote add upstream https://github.com/python-geeks/Automation-scripts.git
+    git remote add upstream https://github.com/abhinand5/ml-notebooks-101.git
     ```
 * Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
     ```
@@ -51,9 +51,9 @@ We love your input! We want to make contributing to this project as easy and tra
 
 * Code should be properly commented to ensure it's readability.
 * If you've added code that should be tested, add tests as comments.
-* Make sure your code properly formatted.
-* Issue that pull request!
-* use Flake8 for python code
+* Make sure your code is properly formatted.
+* Link the relevant Issue the pull request!
+* Use Flake8/Black to check code quality before committing. 
 
 ## Issue suggestions/Bug reporting
 
