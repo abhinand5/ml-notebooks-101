@@ -10,7 +10,7 @@ You can contribute by adding new scripts/notebooks, improving current scripts or
 
 Below are some Instructions before making a Pull Request
 
-### How to comtribute
+### How to contribute
 
 > Note: Avoid making PRs by copying code from elsewhere. 
 
