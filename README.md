@@ -1,6 +1,6 @@
 # ML Notebooks 101
 
-The aim of this repository is to host a wide variety of ML implementations in a beginner friendly. 
+The aim of this repository is to host a wide variety of ML implementations that can be useful for beginners as well as intermediate or advanced practitioners.. 
 
 ## Anyone can contribute!
 
