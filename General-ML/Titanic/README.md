@@ -171,21 +171,6 @@ logistic = LogisticRegression()
 logistic.fit(X, Y)
 Y_pred = logistic.predict(X_test)
 ```
-### ANN
-```python
-import keras
-from keras.models import Sequential
-from keras.layers import Dense
-classifier = Sequential()
-classifier.add(Dense(units = 5, kernel_initializer = 'uniform', activation = 'relu', input_dim = 8))
-classifier.add(Dense(units = 5, kernel_initializer = 'uniform', activation = 'relu'))
-classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'sigmoid'))
-classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-classifier.fit(X,Y,batch_size = 10,epochs = 100)
-Y_pred = classifier.predict(X_test)
-Y_pred = (Y_pred > 0.5)
-Y_pred = Y_pred.astype(int)
-```
 ## Prediction
 
 ### Which Model is the best?
@@ -198,6 +183,5 @@ Y_pred = Y_pred.astype(int)
 | Decision Tree | 71.291 |
 | Random Forest | 74.162 |
 | Logistic Regression | 76.076 |
-| ANN| 75.598 |
 
 As we can see SVM Classifier shows the best result. Therefore, **SVM Classifier Model** is the best model for this Titanic: Machine Learning from disaster Challenge.
