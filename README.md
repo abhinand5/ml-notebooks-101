@@ -16,6 +16,7 @@ This repo is in its early stages - only a few notebooks have been added so far, 
 - [GANs - (Not Yet Implemented)](https://github.com/abhinand5/ml-notebooks-101/tree/main/GANs)
 - [General ML](https://github.com/abhinand5/ml-notebooks-101/tree/main/General-ML)
   * [Regression 101: Predicting Housing Prices](https://github.com/abhinand5/ml-notebooks-101/blob/main/General-ML/regression-101-predicting-housingprices.ipynb)
+  * [Titanic: Machine Learning from Disaster](https://github.com/abhinand5/ml-notebooks-101/blob/main/General-ML/Titanic_ML_from_disaster)
 - [NLP](https://github.com/abhinand5/ml-notebooks-101/tree/main/NLP)
   * [Language Modelling](https://github.com/abhinand5/ml-notebooks-101/tree/main/NLP/LanguageModelling)
     + [Basic N-Gram Language Modelling](https://github.com/abhinand5/ml-notebooks-101/blob/main/NLP/LanguageModelling/N-Gram/ngram-language-model.ipynb)
