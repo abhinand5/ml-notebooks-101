@@ -101,28 +101,24 @@ X_test[:,[5]] = missingvalues4.transform(X_test[:,[5]])
 ```
 ### Encoding Categorical Data
 ```python
+# encoding categorical data
 from sklearn.preprocessing import LabelEncoder , OneHotEncoder
+from sklearn.compose import ColumnTransformer
 labelencoder1 = LabelEncoder()
 X[:, 1] = labelencoder1.fit_transform(X[:,1])
 labelencoder2 = LabelEncoder()
 X[:, 6] = labelencoder2.fit_transform(X[:,6])
 X = X.astype(float)
-onehotencoder1 = OneHotEncoder(categorical_features = [1])
-X = onehotencoder1.fit_transform(X).toarray()
-X = X[:,1:]
-onehotencoder2 = OneHotEncoder(categorical_features = [6])
-X = onehotencoder2.fit_transform(X).toarray()
+columnTransformer1 = ColumnTransformer([('encoder', OneHotEncoder(), [6])],     remainder='passthrough')
+X = np.array(columnTransformer1.fit_transform(X),dtype=np.str)
 X = X[:,1:]
 labelencoder3 = LabelEncoder()
-X_test[:, 2] = labelencoder3.fit_transform (X_test[:,2])
+X_test[:, 1] = labelencoder3.fit_transform (X_test[:,1])
 labelencoder4 = LabelEncoder()
 X_test[:, 6] = labelencoder4.fit_transform (X_test[:,6])
 X_test = X_test.astype(float)
-onehotencoder3 = OneHotEncoder(categorical_features = [1])
-X_test = onehotencoder3.fit_transform(X_test).toarray()
-X_test = X_test[:,1:]
-onehotencoder4 = OneHotEncoder(categorical_features = [6])
-X_test = onehotencoder4.fit_transform(X_test).toarray()
+columnTransformer2 = ColumnTransformer([('encoder', OneHotEncoder(), [6])],     remainder='passthrough')
+X_test = np.array(columnTransformer2.fit_transform(X_test),dtype=np.str)
 X_test = X_test[:,1:]
 ```
 ### Feature Scaling
