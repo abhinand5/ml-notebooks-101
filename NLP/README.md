@@ -1,0 +1,2 @@
+# Natural Language Processing 
+Natural Language Processing (NLP) is an scope in Artificial Language where ML and Deep Learning are applied in textual expressions. It is recently booming field in AI, garnering many attention with new developments. 
